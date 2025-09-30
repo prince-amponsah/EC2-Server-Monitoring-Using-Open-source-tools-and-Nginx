@@ -1,4 +1,4 @@
-# Monitoring-EC2-Server-Monitoring-Using-Open-source-tools-and-Nginx
+# EC2-Server-Monitoring-Using-Open-source-tools-and-Nginx
 
 Monitoring of EC2 instances is mostly done with **CloudWatch**, but in this short demo, I implemented monitoring of an EC2 instance that’s running a website with **Nginx Server**, using **Prometheus** and **Grafana** to track key metrics like **CPU, Memory, and Network flow**.
 <img width="1438" height="832" alt="Screenshot 2025-09-30 at 11 11 11" src="https://github.com/user-attachments/assets/1f93d774-78b1-4dbe-8da1-255c3658420e" />
