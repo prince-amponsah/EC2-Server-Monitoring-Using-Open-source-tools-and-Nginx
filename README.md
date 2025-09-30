@@ -5,6 +5,7 @@ Monitoring or EC2 INstances are mostly done with cloud watch, but in this short 
 
 
 
+
 # Setup Guide: Prometheus, Grafana & Nginx on AWS EC2 (Ubuntu)
 
 ## 1. Launch an EC2 Instance
@@ -30,14 +31,20 @@ Monitoring or EC2 INstances are mostly done with cloud watch, but in this short 
     ii. install unzip if you don't have and unzip the zipped folder.
     iii. cd into the unzipped folder and move all the files into nginx index loading folder
     sudo mv * /var/www/html/
-    <img width="1435" height="832" alt="Screenshot 2025-09-30 at 10 37 51" src="https://github.com/user-attachments/assets/c21fb0b0-3966-4dd1-a548-3ca5198784eb" />
+   ![Uploading Screenshot 2025-09-30 at 11.11.11.png…]()
+
 
 12. Configure Security Groups
     i. Open inbound port 9090 for Prometheus from your IP
     ii. Open inbound port 3000 for Grafana from your IP
     iii. Open port 80 from anywhere to be able to see the site being hosted by nginx
 14. Login to grafana and setup data sources from Prometheus Server
+    Access Grafana:
+👉 http://<EC2-Public-IP>:3000
+(Default login: admin / admin)
     
     <img width="1145" height="263" alt="Screenshot 2025-09-30 at 10 19 56" src="https://github.com/user-attachments/assets/cbce71fc-661f-4e62-bf60-3f9d4f676f56" />
 <img width="1436" height="832" alt="Screenshot 2025-09-30 at 10 10 44" src="https://github.com/user-attachments/assets/954d6d64-7889-4330-b585-61efc14983af" />
+<img width="1435" height="832" alt="Screenshot 2025-09-30 at 10 37 51" src="https://github.com/user-attachments/assets/e9fc49a7-1b0d-4f62-8048-91c54d5bf4f1" />
+
 
