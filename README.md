@@ -4,8 +4,8 @@ Monitoring of EC2 instances is mostly done with **CloudWatch**, but in this shor
 <img width="1438" height="832" alt="Screenshot 2025-09-30 at 11 11 11" src="https://github.com/user-attachments/assets/1f93d774-78b1-4dbe-8da1-255c3658420e" />
 <img width="1440" height="831" alt="Screenshot 2025-09-30 at 09 49 36" src="https://github.com/user-attachments/assets/463d0d39-6257-4c2a-8e31-069dec7ee053" />
 <img width="1436" height="832" alt="Screenshot 2025-09-30 at 10 10 44" src="https://github.com/user-attachments/assets/01462d2c-b568-4227-a157-0d5136dd1f71" />
-<img width="1435" height="832" alt="Screenshot 2025-09-30 at 10 37 51" src="https://github.com/user-attachments/assets/446934a0-2602-49d5-be8e-72f002262847" />
 <img width="1145" height="263" alt="Screenshot 2025-09-30 at 10 19 56" src="https://github.com/user-attachments/assets/a38fd453-806c-466c-af53-17dab02df56b" />
+<img width="1435" height="832" alt="Screenshot 2025-09-30 at 10 37 51" src="https://github.com/user-attachments/assets/446934a0-2602-49d5-be8e-72f002262847" />
 
 
 
