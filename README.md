@@ -1,6 +1,12 @@
 # Monitoring-EC2-Server-Monitoring-Using-Open-source-tools-and-Nginx
 
 Monitoring of EC2 instances is mostly done with **CloudWatch**, but in this short demo, I implemented monitoring of an EC2 instance that’s running a website with **Nginx Server**, using **Prometheus** and **Grafana** to track key metrics like **CPU, Memory, and Network flow**.
+<img width="1438" height="832" alt="Screenshot 2025-09-30 at 11 11 11" src="https://github.com/user-attachments/assets/1f93d774-78b1-4dbe-8da1-255c3658420e" />
+<img width="1435" height="832" alt="Screenshot 2025-09-30 at 10 37 51" src="https://github.com/user-attachments/assets/446934a0-2602-49d5-be8e-72f002262847" />
+<img width="1145" height="263" alt="Screenshot 2025-09-30 at 10 19 56" src="https://github.com/user-attachments/assets/a38fd453-806c-466c-af53-17dab02df56b" />
+<img width="1436" height="832" alt="Screenshot 2025-09-30 at 10 10 44" src="https://github.com/user-attachments/assets/01462d2c-b568-4227-a157-0d5136dd1f71" />
+<img width="1440" height="831" alt="Screenshot 2025-09-30 at 09 49 36" src="https://github.com/user-attachments/assets/463d0d39-6257-4c2a-8e31-069dec7ee053" />
+
 
 ## Setup Guide: Prometheus, Grafana & Nginx on AWS EC2 (Ubuntu)
 
@@ -26,7 +32,6 @@ Monitoring of EC2 instances is mostly done with **CloudWatch**, but in this shor
    ```bash
    sudo systemctl restart prometheus
    ```
-<img width="1440" height="831" alt="Screenshot 2025-09-30 at 09 49 36" src="https://github.com/user-attachments/assets/6c6a69c3-4412-4a8b-9739-a10b69c9ebc6" />
 
 
 4. Install Grafana
@@ -37,7 +42,6 @@ Monitoring of EC2 instances is mostly done with **CloudWatch**, but in this shor
    sudo systemctl enable --now grafana-server
    systemctl status grafana-server
    ```
-<img width="1436" height="832" alt="Screenshot 2025-09-30 at 10 10 44" src="https://github.com/user-attachments/assets/94b4c831-3d56-445c-8539-1a4eac733438" />
 
 5. Install Nginx Server
 
@@ -67,8 +71,6 @@ Monitoring of EC2 instances is mostly done with **CloudWatch**, but in this shor
      cd 2106_soft_landing
      sudo mv * /var/www/html/
      ```
-![Uploading Screenshot 2025-09-30 at 11.11.11.png…]()
-
   
 7. Configure Security Groups
 
@@ -81,9 +83,6 @@ Monitoring of EC2 instances is mostly done with **CloudWatch**, but in this shor
    * Go to 👉 `http://<EC2-Public-IP>:3000`
    * Default login: **admin / admin**
    * Add Prometheus as a data source: `http://<EC2-Public-IP>:9090`
-
-<img width="1435" height="832" alt="Screenshot 2025-09-30 at 10 37 51" src="https://github.com/user-attachments/assets/98bffbc2-cd8f-44db-a333-47f9eeb92f67" />
-
 ---
 
 ✅ You now have **Prometheus**, **Grafana**, and **Nginx** running on your EC2 instance, providing monitoring + a live hosted website.
